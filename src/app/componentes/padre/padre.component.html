@@ -1,0 +1,11 @@
+<div>
+    <p>Soy el componente padre. Voy a saludar a mi hijo</p>
+    <app-hijo [mensajeDeMiPadre]="saludoPaternal" (mensajeDelHijoAlPadre)="recibirMensajeDelHijo($event)">
+    </app-hijo>
+<p>
+    Mensaje del hijo al padre: <em>"{{ mensajeDelHijo }}"</em>
+</p>
+<p>
+    Mensaje del servicio: <b>"{{ textoDelServicio }}"</b>
+</p>
+</div>

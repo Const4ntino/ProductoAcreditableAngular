@@ -1,0 +1,12 @@
+.div-inicio {
+    border-radius: 1rem;
+    border: solid black .1rem;
+    margin: 1rem;
+    padding: 1rem;
+    display: inline-block;
+}
+
+p {
+    font-size: 2rem;
+    margin: 1rem;
+}

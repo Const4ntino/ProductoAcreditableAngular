@@ -1,0 +1,12 @@
+.div-contador {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1rem;
+    border: .2rem solid blue;
+}
+
+h2, p {
+    text-align: center;
+}
+

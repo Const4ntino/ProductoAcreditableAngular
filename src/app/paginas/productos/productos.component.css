@@ -1,0 +1,16 @@
+p {
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+}
+
+ul {
+    margin: 0 10rem 10rem 10rem;
+}
+
+li {
+    font-size: 1.6rem;
+    font-style: italic;
+}

@@ -1,0 +1,22 @@
+<div *ngIf="estaLogueado">
+    Bienvenido usuario!
+    <ng-container [ngSwitch]="tipoUsuario">
+        <div *ngSwitchCase="'admin'">Administrador</div>
+        <div *ngSwitchCase="'vendedor'">Vendedor</div>
+        <div *ngSwitchCase="'asesor'">Asesor</div>
+        <div *ngSwitchCase="'trabajador'">Trabajador</div>
+        <div *ngSwitchDefault>Visitante</div>
+    </ng-container> 
+</div>
+
+<p *ngIf="cargando">
+    Cargando...
+</p>
+
+<ng-container *ngIf="cargando==false">
+    <h2>Lista de frutas:</h2>
+</ng-container>
+
+<ul *ngIf="cargando==false">
+    <li *ngFor="let fruta of listaFrutas">{{ fruta }}</li>
+</ul>

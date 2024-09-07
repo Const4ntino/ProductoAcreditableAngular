@@ -1,0 +1,11 @@
+<div>
+    <p>
+        Soy el hijo. Mi padre me dice <i>"{{ mensajeDeMiPadre }}"</i>
+    </p>
+
+    <label for="">
+        <span>Ingresar el mensaje</span>
+        <input type="text" [(ngModel)]="mensaje">
+        <button (click)="emitirMensaje()">Emitir mensaje al padre</button>
+    </label>
+</div>
